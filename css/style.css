@@ -5,9 +5,19 @@
     box-sizing: inherit;
 }
 
-html, body {
+/* html, body {
     color: blanchedalmond;
     background-image: linear-gradient(to right bottom, rgb(31, 10, 88), rgb(194, 177, 79));
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+html, body {
+    color: blanchedalmond;
+    background-image: url("../image/clear_sky.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,18 +32,54 @@ html {
 
 body {
     font-family: Gill Sans / Gill Sans MT, sans-serif;
-    color: rgb(231, 228, 228);
+    color: rgb(240, 240, 240);
     font-weight: 300;
     line-height: 1.6;
 }
 
+h1, h3 {
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+font {
+    font-size: 125%;
+}
 .container {
     width: 60%;
     margin: 2rem auto;
 }
 
+.spacer {
+    margin-bottom: 1rem;
+}
+
+#move-right {
+    float: right;
+}
+
 .weather {
     color: black;
+}
+
+/* .card--3 {
+    border: 1px solid black;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+} */
+
+#weather-text {
+    display: inline-block;
+    width: 50%;
+}
+
+#weather-icon {
+    height: 150px;
+    width: 150px;
+    border: 0;
 }
 
 /* Grid CSS Values */
@@ -41,7 +87,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
-    grid-gap: 1.5rem;
+    grid-gap: 1rem;
 }
 
 .gallery__img{

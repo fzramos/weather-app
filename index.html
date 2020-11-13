@@ -14,15 +14,29 @@
     <div class="container">
         <h1>Weather App</h1>
         <form>
-            <div class="form-group">
-              <label for="city">City</label>
+            <div class="form-group spacer">
+              <label for="city">City or U.S. Zipcode</label>
               <input type="text" class="form-control" id="city" placeholder="Ex. Paris">
             </div>
-            <button type="button" class="btn btn-primary" onclick="cityOrZip()">Submit</button>
-            <button type="button" class="btn btn-primary">Use Current Location</button>
+            <button type="button" class="btn btn-primary spacer" onclick="getTemp()">Get Weather</button>
+            <button type="button" class="btn btn-primary spacer justify-content-end" id="move-right" >Use Current Location</button>
 
         </form>
+        <!-- <form>
+            <label for="city">City or U.S. Zipcode</label>
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" id="city" placeholder="Ex. Paris">
+                </div>
+              <div class="col">
+                <button type="button" class="btn btn-primary spacer justify-content-end" id="move-right" >Use Current Location</button>
+            </div>
+            </div>
+            <button type="button" class="btn btn-primary spacer" onclick="cityOrZip()">Submit</button>
 
+          </form> -->
+
+        <h3 id="city-title"></h3>
 
         <!-- 4 cards -->
         <div class="card_group">
@@ -50,15 +64,20 @@
                     <p class="card-text"></p>
                 </div>
             </div>
+
             <div class="card weather" id="forcast-card">
                 <div class="card-header">
                     <h5 class="card-title">Forcast</h5>
                 </div>
                 <div class="card-body card--3">
-                    <h4></h4>
-                    <p class="card-text"></p>
+                    <div id="weather-text">
+                        <h4></h4>
+                        <p class="card-text"></p>
+                    </div>
+                    <img src="image/sun.svg" alt="sun image" class="img-thumbnail" id="weather-icon">
                 </div>
             </div>
+
             <div class="card weather" id="feels-card">
                 <div class="card-header">
                     <h5 class="card-title">Feels Like</h5>
