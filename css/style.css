@@ -17,30 +17,34 @@ html, body {
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 150%;
 }
 
 body {
-    font-family: 'Nunito', 'san-serif';
-    color: rgb(145, 145, 145);
+    font-family: Gill Sans / Gill Sans MT, sans-serif;
+    color: rgb(231, 228, 228);
     font-weight: 300;
     line-height: 1.6;
 }
 
 .container {
-    width: 40%;
+    width: 60%;
     margin: 2rem auto;
 }
 
+.weather {
+    color: black;
+}
+
 /* Grid CSS Values */
-.gallery {
+.card_group {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
     grid-gap: 1.5rem;
 }
 
-/* .gallery__img{
+.gallery__img{
     width: 100%;
     height: 100%;
     max-height: 100%;
@@ -48,9 +52,16 @@ body {
     display: block;
 }
 
-.gallery__item--1 {
+/* .card-small {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     grid-row-start: 1;
+    grid-row-end: 3;
+} */
+
+#forcast-card {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
     grid-row-end: 3;
 } */
