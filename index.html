@@ -18,7 +18,7 @@
               <label for="city">City</label>
               <input type="text" class="form-control" id="city" placeholder="Ex. Paris">
             </div>
-            <button type="button" class="btn btn-primary" onclick="getWeather()">Submit</button>
+            <button type="button" class="btn btn-primary" onclick="cityOrZip()">Submit</button>
             <button type="button" class="btn btn-primary">Use Current Location</button>
 
         </form>
@@ -31,7 +31,7 @@
                     <h5 class="card-title">High</h5>
                 </div>
                 <div class="card-body">
-                    <p class="card-text">High HERE</p>
+                    <p class="card-text high-text"></p>
                 </div>
             </div>
             <div class="card weather" id="low-card">
@@ -39,7 +39,7 @@
                     <h5 class="card-title">Low</h5>
                 </div>
                 <div class="card-body">
-                    <p class="card-text">High HERE</p>
+                    <p class="card-text low-text"></p>
                 </div>
             </div>
             <div class="card weather" id="humidity-card">
@@ -47,7 +47,7 @@
                     <h5 class="card-title">Humidity</h5>
                 </div>
                 <div class="card-body">
-                    <p class="card-text">High HERE</p>
+                    <p class="card-text"></p>
                 </div>
             </div>
             <div class="card weather" id="forcast-card">
@@ -55,9 +55,19 @@
                     <h5 class="card-title">Forcast</h5>
                 </div>
                 <div class="card-body card--3">
-                    <p class="card-text">High HERE</p>
+                    <h4></h4>
+                    <p class="card-text"></p>
                 </div>
             </div>
+            <div class="card weather" id="feels-card">
+                <div class="card-header">
+                    <h5 class="card-title">Feels Like</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text"></p>
+                </div>
+            </div>
+
 
         </div>
     </div>
