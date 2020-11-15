@@ -13,13 +13,13 @@
 <body>
     <div class="container">
         <h1>Weather App</h1>
-        <form>
+        <form id="myForm" onsubmit="return false;">
             <div class="form-group spacer">
               <label for="city">City or U.S. Zipcode</label>
               <input type="text" class="form-control" id="city" placeholder="Ex. Paris">
             </div>
             <button type="button" class="btn btn-primary spacer" onclick="getTemp()">Get Weather</button>
-            <button type="button" class="btn btn-primary spacer justify-content-end" id="move-right" >Use Current Location</button>
+            <button type="button" class="btn btn-primary spacer justify-content-end" id="move-right" onclick="getLocation()" >Use Current Location</button>
 
         </form>
 

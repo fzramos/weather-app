@@ -1,0 +1,1 @@
+Using the Open Weather API, the goal of this project is to create a Current Weather Application that takes in a user's current location or allows them to pick a city then displays the current High, Low, Forecast temperature, Feels Like temperature, and Humidity of the location.
